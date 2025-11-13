@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $portfolio_name; ?> - Graphic Designer Portfolio</title>
+    <title>Johnemil Tupas - Graphic Designer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -509,7 +508,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home"><?php echo $portfolio_name; ?></a>
+                <a href="#home">Johnemil Tupas</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
@@ -532,16 +531,16 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content fade-in">
-                <h1 class="hero-title"><?php echo $portfolio_name; ?></h1>
-                <h2 class="hero-subtitle"><?php echo $job_title; ?></h2>
-                <p class="hero-description"><?php echo $hero_description; ?></p>
+                <h1 class="hero-title">Johnemil Tupas</h1>
+                <h2 class="hero-subtitle">Graphic Designer</h2>
+                <p class="hero-description">Creative and detail-oriented Graphic Designer with 4+ years of experience in digital and print design. Specialized in creating engaging visuals for social media, marketing campaigns, and branding projects.</p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn-primary">View My Work</a>
                     <a href="#contact" class="btn-secondary">Get In Touch</a>
                 </div>
             </div>
             <div class="hero-image fade-in-right">
-                <img src="fa193bfd-24d7-4909-955c-cd2f02a340c8.jpg" alt="<?php echo $portfolio_name; ?>">
+                <img src="fa193bfd-24d7-4909-955c-cd2f02a340c8.jpg" alt="Johnemil Tupas">
                 <div class="image-border"></div>
             </div>
         </div>
@@ -556,7 +555,7 @@
             </div>
             <div class="about-content">
                 <div class="about-text animate-on-scroll">
-                    <p><?php echo $about_description; ?></p>
+                    <p>I'm a passionate graphic designer who loves creating visual solutions that communicate effectively and inspire action. With a strong foundation in both traditional design principles and modern digital techniques, I bring creativity and technical expertise to every project.</p>
                     
                     <div class="about-details">
                         <div class="detail-item">
@@ -564,12 +563,18 @@
                             <div>
                                 <h4>Education</h4>
                                 <ul>
-                                    <?php foreach($education as $edu): ?>
                                     <li>
-                                        <strong><?php echo $edu['degree']; ?></strong><br>
-                                        <?php echo $edu['school']; ?> (<?php echo $edu['years']; ?>)
+                                        <strong>Master Of Graphic Design</strong><br>
+                                        Keithston University (2016 - 2018)
                                     </li>
-                                    <?php endforeach; ?>
+                                    <li>
+                                        <strong>Bachelor Of Graphic Design</strong><br>
+                                        Salford & Co. University (2012 - 2016)
+                                    </li>
+                                    <li>
+                                        <strong>Senior High School</strong><br>
+                                        Timmerman High School (2009 - 2012)
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -579,9 +584,10 @@
                     <h3>Hobbies & Interests</h3>
                     <div class="hobbies">
                         <div class="hobbies-list">
-                            <?php foreach($hobbies as $hobby): ?>
-                            <span class="hobby-tag"><?php echo $hobby; ?></span>
-                            <?php endforeach; ?>
+                            <span class="hobby-tag">Reading</span>
+                            <span class="hobby-tag">Gaming</span>
+                            <span class="hobby-tag">Front-end Development</span>
+                            <span class="hobby-tag">Travel</span>
                         </div>
                     </div>
                 </div>
@@ -597,30 +603,66 @@
                 <p class="section-subtitle animate-on-scroll">What I'm great at</p>
             </div>
             <div class="skills-container">
-                <?php 
-                // Define skills with percentages
-                $main_skills = [
-                    ['name' => 'Graphic Design', 'icon' => 'fas fa-palette', 'percentage' => 95],
-                    ['name' => 'UI/UX Design', 'icon' => 'fas fa-pencil-ruler', 'percentage' => 80],
-                    ['name' => 'Adobe Photoshop', 'icon' => 'fas fa-adobe', 'percentage' => 95],
-                    ['name' => 'Illustrator', 'icon' => 'fas fa-vector-square', 'percentage' => 88],
-                    ['name' => 'Web Design', 'icon' => 'fas fa-laptop-code', 'percentage' => 85],
-                    ['name' => 'Canva', 'icon' => 'fas fa-copyright', 'percentage' => 92]
-                ];
-                
-                foreach($main_skills as $skill): 
-                ?>
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="<?php echo $skill['icon']; ?>"></i>
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <div class="skill-label"><?php echo $skill['name']; ?></div>
+                    <div class="skill-label">Graphic Design</div>
                     <div class="skill-progress">
-                        <div class="skill-progress-bar" style="--progress: <?php echo $skill['percentage']; ?>%"></div>
+                        <div class="skill-progress-bar" style="--progress: 95%"></div>
                     </div>
-                    <span class="skill-percentage"><?php echo $skill['percentage']; ?>%</span>
+                    <span class="skill-percentage">95%</span>
                 </div>
-                <?php endforeach; ?>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="skill-label">UI/UX Design</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-adobe"></i>
+                    </div>
+                    <div class="skill-label">Adobe Photoshop</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 95%"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-vector-square"></i>
+                    </div>
+                    <div class="skill-label">Illustrator</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 88%"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="skill-label">Web Design</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                    <div class="skill-label">Canva</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 92%"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
             </div>
         </div>
     </section>
@@ -633,19 +675,6 @@
                 <p class="section-subtitle animate-on-scroll">Communication proficiency</p>
             </div>
             <div class="lang-container">
-                <?php 
-                // Define languages with percentages
-                $languages = [
-                    ['name' => 'Filipino', 'percentage' => 95],
-                    ['name' => 'English', 'percentage' => 80],
-                   
-                ];
-                
-                foreach($languages as $lang): 
-                    $percentage = $lang['percentage'];
-                    $circumference = 440;
-                    $offset = $circumference - ($circumference * $percentage / 100);
-                ?>
                 <div class="language-circle">
                     <svg class="circle-svg">
                         <defs>
@@ -655,14 +684,29 @@
                             </linearGradient>
                         </defs>
                         <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
-                        <circle class="circle-progress" cx="75" cy="75" r="70" style="--offset: <?php echo $offset; ?>"></circle>
+                        <circle class="circle-progress" cx="75" cy="75" r="70" style="--offset: 22"></circle>
                     </svg>
                     <div class="circle-content">
-                        <div class="lang-label"><?php echo $lang['name']; ?></div>
-                        <div class="lang-percentage"><?php echo $percentage; ?>%</div>
+                        <div class="lang-label">Filipino</div>
+                        <div class="lang-percentage">95%</div>
                     </div>
                 </div>
-                <?php endforeach; ?>
+                <div class="language-circle">
+                    <svg class="circle-svg">
+                        <defs>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="circle-bg" cx="75" cy="75" r="70"></circle>
+                        <circle class="circle-progress" cx="75" cy="75" r="70" style="--offset: 88; stroke: url(#gradient2)"></circle>
+                    </svg>
+                    <div class="circle-content">
+                        <div class="lang-label">English</div>
+                        <div class="lang-percentage">80%</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -675,40 +719,24 @@
                 <p class="section-subtitle animate-on-scroll">Website designs I've created</p>
             </div>
             <div class="projects-grid">
-                <?php 
-                // Define your website design projects
-                $projects = [
-                    [
-                        'title' => 'E-tapke Website',
-                        'description' => 'RFID Enabled Ingress and Egress Monitoring System for SRC Library',
-                        'image' => '551867091_1369840581180085_7830343617646226719_n.png',
-                        'link' => 'https://etapke.com/',
-                        'tags' => ['Web Design', 'UI/UX']
-                    ]
-                ];
-                
-                foreach($projects as $index => $project): 
-                ?>
-                <div class="project-card animate-on-scroll" style="animation-delay: <?php echo $index * 0.1; ?>s">
+                <div class="project-card animate-on-scroll" style="animation-delay: 0s">
                     <div class="project-image">
-                        <img src="<?php echo $project['image']; ?>" alt="<?php echo $project['title']; ?>">
+                        <img src="551867091_1369840581180085_7830343617646226719_n.png" alt="E-tapke Website">
                         <div class="project-overlay">
-                            <a href="<?php echo $project['link']; ?>" target="_blank" class="project-view-btn">
+                            <a href="https://etapke.com/" target="_blank" class="project-view-btn">
                                 <i class="fas fa-external-link-alt"></i> View Project
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title"><?php echo $project['title']; ?></h3>
-                        <p class="project-description"><?php echo $project['description']; ?></p>
+                        <h3 class="project-title">E-tapke Website</h3>
+                        <p class="project-description">RFID Enabled Ingress and Egress Monitoring System for SRC Library</p>
                         <div class="project-tags">
-                            <?php foreach($project['tags'] as $tag): ?>
-                            <span class="project-tag"><?php echo $tag; ?></span>
-                            <?php endforeach; ?>
+                            <span class="project-tag">Web Design</span>
+                            <span class="project-tag">UI/UX</span>
                         </div>
                     </div>
                 </div>
-                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -721,65 +749,96 @@
                 <p class="section-subtitle animate-on-scroll">Professional certifications & achievements</p>
             </div>
             <div class="certificates-grid">
-                <?php 
-                // Define your certificates
-                $certificates = [
-                    [
-                        'title' => 'Graphic Design Certificate',
-                        'issuer' => 'Adobe Certified',
-                        'image' => '0cc98c66-7677-45f8-943d-62c90a8222ab.jpg',
-                        'date' => '2025'
-                    ],
-                    [
-                        'title' => 'RAITE Certificate',
-                        'issuer' => 'Coursera',
-                        'image' => '1b511ca2-b751-400c-b879-6ca914e938c7.jpg',
-                        'date' => '2024'
-                    ],
-                    [
-                        'title' => 'Web Design Certificate',
-                        'issuer' => 'Udemy',
-                        'image' => '9e371ea8-ca88-4d58-b60a-af720e08422c.jpg',
-                        'date' => '2025'
-                    ],
-                    [
-                        'title' => 'Colloquium Certificate',
-                        'issuer' => 'Udemy',
-                        'image' => '152aabbb-84fb-4df8-b789-d3c059d05d9d.jpg',
-                        'date' => '2025'
-                    ],
-                    [
-                        'title' => 'Code Commit Certificate',
-                        'issuer' => 'Udemy',
-                        'image' => '5811ff1b-3113-4657-a2a2-090d221dff73.jpg',
-                        'date' => '2025'
-                    ],
-                    [
-                        'title' => 'PMI Certificate',
-                        'issuer' => 'Google',
-                        'image' => 'b1d8d79a-078a-437b-8fcf-54b88d66bb5e.jpg',
-                        'date' => '2024'
-                    ]
-                ];
-                
-                foreach($certificates as $index => $cert): 
-                ?>
-                <div class="certificate-item animate-on-scroll" style="animation-delay: <?php echo $index * 0.1; ?>s">
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0s">
                     <div class="certificate-image-wrapper">
-                        <img src="<?php echo $cert['image']; ?>" alt="<?php echo $cert['title']; ?>" class="certificate-image">
+                        <img src="0cc98c66-7677-45f8-943d-62c90a8222ab.jpg" alt="Graphic Design Certificate" class="certificate-image">
                         <div class="certificate-overlay">
-                            <button class="view-certificate-btn" onclick="openCertificateModal('<?php echo $cert['image']; ?>', '<?php echo $cert['title']; ?>')">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('0cc98c66-7677-45f8-943d-62c90a8222ab.jpg', 'Graphic Design Certificate')">
                                 <i class="fas fa-search-plus"></i> View Certificate
                             </button>
                         </div>
                     </div>
                     <div class="certificate-info">
-                        <h4 class="certificate-title"><?php echo $cert['title']; ?></h4>
-                        <p class="certificate-issuer"><?php echo $cert['issuer']; ?></p>
-                        <span class="certificate-date"><i class="far fa-calendar"></i> <?php echo $cert['date']; ?></span>
+                        <h4 class="certificate-title">Graphic Design Certificate</h4>
+                        <p class="certificate-issuer">Adobe Certified</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2025</span>
                     </div>
                 </div>
-                <?php endforeach; ?>
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="certificate-image-wrapper">
+                        <img src="1b511ca2-b751-400c-b879-6ca914e938c7.jpg" alt="RAITE Certificate" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('1b511ca2-b751-400c-b879-6ca914e938c7.jpg', 'RAITE Certificate')">
+                                <i class="fas fa-search-plus"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4 class="certificate-title">RAITE Certificate</h4>
+                        <p class="certificate-issuer">Coursera</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2024</span>
+                    </div>
+                </div>
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="certificate-image-wrapper">
+                        <img src="9e371ea8-ca88-4d58-b60a-af720e08422c.jpg" alt="Web Design Certificate" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('9e371ea8-ca88-4d58-b60a-af720e08422c.jpg', 'Web Design Certificate')">
+                                <i class="fas fa-search-plus"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4 class="certificate-title">Web Design Certificate</h4>
+                        <p class="certificate-issuer">Udemy</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2025</span>
+                    </div>
+                </div>
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="certificate-image-wrapper">
+                        <img src="152aabbb-84fb-4df8-b789-d3c059d05d9d.jpg" alt="Colloquium Certificate" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('152aabbb-84fb-4df8-b789-d3c059d05d9d.jpg', 'Colloquium Certificate')">
+                                <i class="fas fa-search-plus"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4 class="certificate-title">Colloquium Certificate</h4>
+                        <p class="certificate-issuer">Udemy</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2025</span>
+                    </div>
+                </div>
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="certificate-image-wrapper">
+                        <img src="5811ff1b-3113-4657-a2a2-090d221dff73.jpg" alt="Code Commit Certificate" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('5811ff1b-3113-4657-a2a2-090d221dff73.jpg', 'Code Commit Certificate')">
+                                <i class="fas fa-search-plus"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4 class="certificate-title">Code Commit Certificate</h4>
+                        <p class="certificate-issuer">Udemy</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2025</span>
+                    </div>
+                </div>
+                <div class="certificate-item animate-on-scroll" style="animation-delay: 0.5s">
+                    <div class="certificate-image-wrapper">
+                        <img src="b1d8d79a-078a-437b-8fcf-54b88d66bb5e.jpg" alt="PMI Certificate" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <button class="view-certificate-btn" onclick="openCertificateModal('b1d8d79a-078a-437b-8fcf-54b88d66bb5e.jpg', 'PMI Certificate')">
+                                <i class="fas fa-search-plus"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4 class="certificate-title">PMI Certificate</h4>
+                        <p class="certificate-issuer">Google</p>
+                        <span class="certificate-date"><i class="far fa-calendar"></i> 2024</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -804,25 +863,25 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p><?php echo $contact_info['phone']; ?></p>
+                            <p>+63921-5930-328</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><?php echo $contact_info['email']; ?></p>
+                            <p>tupasjohnemil86@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-globe"></i>
                         <div>
                             <h4>Website</h4>
-                            <p><?php echo $contact_info['website']; ?></p>
+                            <p>etapke.com</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form animate-on-scroll" method="POST" action="includes/send_email.php">
+                <form class="contact-form animate-on-scroll" method="POST" action="mailto:tupasjohnemil86@gmail.com">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                     </div>
@@ -841,7 +900,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> <?php echo $portfolio_name; ?>. All rights reserved.</p>
+            <p>&copy; 2025 Johnemil Tupas. All rights reserved.</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-behance"></i></a>
@@ -879,4 +938,3 @@
     </script>
 </body>
 </html>
-
